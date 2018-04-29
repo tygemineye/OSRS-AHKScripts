@@ -23,7 +23,7 @@ SetTimer, AbortLogout, 3600000
 Start:
 
 ImageSearch, OrientX, OrientY, 0, 0, A_Screenwidth, A_Screenheight, Orient1.png ;orient client by searching whole screen for prayer hud icon
-	if ErrorLevel = 0
+	if ErrorLevel = 0 ;test
 		{
 		MouseMove, OrientX, OrientY ;move mouse to top left pixel of prayer hud menu icon to create new origin point for coordinate system
 		MouseMove, -696, -171, 0, R ;0, 0 ;coordinates from prayer icon to origin point
