@@ -520,7 +520,7 @@ EmptyInv: ;deposit ore into bank
 									if CheckStatsRoll = 1 ;chance per inventory to check skill xp
 										Gosub, CheckStats
 
-								Random, BriefLogoutRoll, 1, 48
+								Random, BriefLogoutRoll, 1, 65
 									if BriefLogoutRoll = 1 ;chance per inventory to logout briefly to simulate a quick break
 										Goto, BriefLogout
 
