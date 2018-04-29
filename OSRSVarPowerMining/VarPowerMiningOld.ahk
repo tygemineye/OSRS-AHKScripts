@@ -11,10 +11,10 @@ SendMode Input  ;Recommended for new scripts due to its superior speed and relia
 ;about 2 min to fill inventory
 ;right click menu options have a vertical height of 14 pixels
 
-;CoordMode, Pixel, Screen
-;CoordMode, Mouse, Screen
-;#Persistent
-;InvDeposited := 0
+CoordMode, Pixel, Screen
+CoordMode, Mouse, Screen
+#Persistent
+InvDeposited := 0
 OreDeposited := 0
 
 Random, TimerVariationRoll, 10000, 20000
@@ -23,7 +23,7 @@ SetTimer, AbortLogout, 3600000
 Start:
 
 ImageSearch, OrientX, OrientY, 0, 0, A_Screenwidth, A_Screenheight, Orient1.png ;orient client by searching whole screen for prayer hud icon
-	if ErrorLevel = 0 ;test
+	if ErrorLevel = 0
 		{
 		MouseMove, OrientX, OrientY ;move mouse to top left pixel of prayer hud menu icon to create new origin point for coordinate system
 		MouseMove, -696, -171, 0, R ;0, 0 ;coordinates from prayer icon to origin point
