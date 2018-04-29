@@ -2,6 +2,7 @@
 #NoEnv  ;Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  ;Enable warnings to assist with detecting common errors.
 SendMode Input  ;Recommended for new scripts due to its superior speed and reliability.
+SetBatchLines, 7ms ;run slightly faster than default 
 
 ;begin in mining guild in dwarven mine at iron patch closest to bank chest
 ;client must be oriented north (click compass) and camera must be tilted all the way upwards (hold "Up" arrow key)
@@ -757,7 +758,7 @@ Loop, 3
 
 RandomSleep: ;small chance after mining each rock to "sleep" temporarily to throw off predictability
 	Gui, Destroy
-	Random, RandomSleepRoll, 1, 80
+	Random, RandomSleepRoll, 1, 90
 		if RandomSleepRoll = 1
 			{
 			Random, SleepDurationOne, 5000, 120000
