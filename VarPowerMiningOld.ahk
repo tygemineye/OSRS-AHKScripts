@@ -459,7 +459,7 @@ EmptyInv: ;deposit ore into bank
 			Sleep, wait200to900milis
 				Random, varyby9, -9, 9
 				Random, varyby8, -8, 8
-				MouseMove, ox+varyby9+418, oy+varyby8+55, 0 ;close button of deposit box window
+				MouseMove, ox+varyby9+418, oy+varyby8+25, 0 ;close button of deposit box window
 					Random, wait200to900milis, 200, 900
 					Sleep, wait200to900milis
 						Click, down
